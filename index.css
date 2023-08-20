@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script&family=Great+Vibes&family=Lato&family=Pacifico&family=Roboto:wght@500&family=Ubuntu:wght@700&display=swap');
+
+body {
+    background-color: hsl(235,18%,26%);
+    font-family: "Roboto";
+}
+
+.title {
+    color: hsl(238,26%,20%);
+    font-size: 3em;
+    margin-top: 60px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    width: 800px;
+    height: 550px;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+#emailtext, #invalidemailtext {
+    font-size: 0.7em;
+}
+
+#part-two {
+    grid-column: 2 / span 1;
+}
+
+#part-one {
+    grid-column: 1 / span 1;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#email {
+    padding: 15px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-family: "Roboto";
+    font-size: 1em;
+}
+
+#subtitle {
+    font-size: 1em;
+    font-family: "Roboto";
+    color: hsl(251,7%,30%);
+}
+
+.checklist {
+    width: 21px;
+    height: 21px;
+    margin-top: 5px;
+}
+
+.styledbuttons {
+    padding: 15px;
+    width: 332px;
+    border-radius: 6px;
+    background-color: hsl(232,31%,20%);
+    color: white;
+    font-family: "Roboto";
+    font-size: 1.0em;
+    border: none;
+}
+
+#invalidemailtext {
+    margin-left: 155px;
+    color: rgb(211, 62, 62);
+    visibility: hidden;
+}
+
+.styledbuttons:hover {
+    cursor: pointer;
+    background: rgb(255,83,121);
+    background: linear-gradient(90deg, rgba(255,83,121,1) 0%, rgba(255,94,92,1) 35%, rgba(255,103,62,1) 100%);
+}
+
+#subscribed {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 275px;
+    border-radius: 30px;
+    background-color: white;
+    text-align: left;
+    display: none;
+}
+
+#listsuccess {
+    width: 64px;
+    height: 64px;
+    margin-top: 60px;
+    margin-left: 15%;
+}
+
+#dismissmessage {
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 70%;
+}
+
+#title {
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+#textsuccess {
+    margin-left: 15%;
+    width: 70%;
+    font-weight: 100;
+}
+
+#inputemail {
+    font-weight: 700;
+}
+
+ul li {
+    list-style-image: url(./assets/images/icon-list.png);
+    line-height: 25px;
+    margin: auto;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        display: grid;
+        width: 400px;
+        height: 100%;
+        grid-template-rows: 40% 60%;
+        padding: 0px;
+        margin: auto;
+    }
+
+    #part-two{
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 2;
+    }
+
+    #part-one{
+        margin-bottom: 75px;
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 2;
+    }
+
+    
+    #signupimage{
+        content: url(./assets/images/illustration-sign-up-mobile.png);
+    }
+  }
